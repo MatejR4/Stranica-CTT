@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Croatian Top Team</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html" class="logo"><img src="logo.svg" alt="LOGO" height="100" width="100"></a>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    <nav class="nav-menu">
+      <a href="index.html">Početna</a>
+      <a href="novosti.html">Novosti</a>
+      <a href="programi.html">Programi</a>
+      <a href="nastim.html">Naš tim</a>
+      <a href="onama.html">O nama</a>
+      <a href="clan.html">Postani član</a>
+    </nav>
+  </header>
+
+  <script>
+    function toggleMenu() {
+      const navMenu = document.querySelector('.nav-menu');
+      navMenu.classList.toggle('active');
+    }
+  </script>
+
+  <h1>MMA</h1>
+  <div class="clanak">
+    <div class="sadrzaj">
+      <p>
+        U Croatian Top Teamu MMA treninzi programirani su na način da pružaju cjelokupnu pipremu boraca visokih
+        amaterskih i profesionalnih razina. Naši treninzi strukturirani su kako bi razvili sve ključne aspekte potrebne
+        za uspjeh u MMA. Uz večernje treninge 6 puta tjedno, od kojih su 3 namjenjeni za borbu u stojci a 3 na parteru,
+        borci imaju jutarnje treninge snage i izdržljivosti. Također, poseban naglasak stavlja se na tehniku, taktiku i
+        mentalnu pripremu. Svaki trening je prilagođen individualnim potrebama boraca, uzimajući u obzir njihove
+        specifične snage i slabosti. Naš tim čine iskusni <a href="Treneri.html">treneri</a> i stručnjaci iz različitih
+        borilačkih disciplina, što omogućava sveobuhvatan pristup treninzima.
+      </p>
+    </div>
+  </div>
+
+  <div class="slike">
+    <img src="mma1.jpg" alt="Trening 1">
+    <img src="mma2.jpg" alt="Trening 2">
+  </div>
+
+  <br>
+  <hr><br>
+
+  <h1>Kickboxing</h1>
+
+  <div class="clanak">
+    <div class="sadrzaj">
+      <p>
+        Uz MMA, U Croatian Top Teamu održavaju se i kickboxing treninzi za sportaše najviše razine. Uz treninge fizičke
+        pripreme koji se održavaju zajedno s MMA borcima, kickboxing treninzi odvijaju se 6 puta tjedno. Kickboxing
+        treninge održava svjetski poznati trener Mike Passenier koji je stvorio mnoge svjetske prvake. Treninzi se
+        fokusiraju na razvoj tehnike, brzine, snage i izdržljivosti, osiguravajući sveobuhvatan pristup svakom borcu.
+        Mikeov jedinstveni stil treniranja kombinira tradicionalne kickboxing tehnike s modernim metodama kondicijske
+        pripreme, čime se postižu optimalni rezultati. Treninzi uključuju intenzivne sparinge, rad na fokuserima i
+        vrećama, kao i detaljne tehničke sesije. Mikeova stručnost i iskustvo pružaju borcima neprocjenjive uvide i
+        savjete koji im pomažu da unaprijede svoje vještine i postignu vrhunske rezultate.
+      </p>
+    </div>
+  </div>
+
+  <div class="slike">
+    <img src="kb1.jpg" alt="Trening 1">
+    <img src="kb2.jpg" alt="Trening 2">
+  </div>
+
+  <br>
+
+  <footer>
+    <img src="logo.svg" alt="Croatian Top Team" style="width:10%; height:auto;">
+  </footer>
+
+</body>
+
+</html>

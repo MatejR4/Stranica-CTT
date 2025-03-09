@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Croatian Top Team</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html" class="logo"><img src="logo.svg" alt="LOGO" height="100" width="100"></a>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    <nav class="nav-menu">
+      <a href="index.html">Početna</a>
+      <a href="novosti.html">Novosti</a>
+      <a href="programi.html">Programi</a>
+      <a href="nastim.html">Naš tim</a>
+      <a href="onama.html">O nama</a>
+      <a href="clan.html">Postani član</a>
+    </nav>
+  </header>
+
+  <script>
+    function toggleMenu() {
+      const navMenu = document.querySelector('.nav-menu');
+      navMenu.classList.toggle('active');
+    }
+  </script>
+
+  <div class="slideshow">
+    <div class="slajd">
+      <a href="novosti.html" target="_blank"><img class="slika" src="caneloseminar.png" alt="Slika Canelo"> </a>
+    </div>
+
+    <div class="slajd">
+      <a href="https://www.ufc.com/event/ufc-313" target="_blank"><img class="slika" src="fightposter.png"
+          alt="Slika UFC 313"></a>
+    </div>
+
+    <div class="slajd">
+      <a href="https://www.ufc.com/event/ufc-313" target="_blank"><img class="slika" src="fncevent.png"
+          alt="Slika FNC 20"></a>
+    </div>
+  </div>
+
+  <script>
+    var slideIndex = 0;
+    slideshow();
+
+    function slideshow() {
+      var i;
+      var slides = document.getElementsByClassName("slajd");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(slideshow, 4000);
+    }
+  </script>
+
+  <div class="Polje">
+    <h2>Dobrodošli u Croatian Top Team</h2>
+
+    <p><strong>Croatian Top Team</strong> ponosno stoji kao središte vrhunskog borilačkog sporta,
+      okupljajući neke od najvećih svjetskih MMA boraca pod jednim krovom.
+      Smještena u Rijeci, naša glavna teretana nije samo mjesto za trening,
+      već dom za strastvene borce koji teže vrhuncu u borilačkim sportovima.</p>
+
+    <h2>Vrhunski Borci</h2>
+    <div class="lista">
+      <ul>
+        <li><strong>Dustin Porier</strong> – Bivši prvak i jedan od najjačih udarača UFC lake kategorije</li>
+        <li><strong>Rico Verhoeven</strong> – Nepobjeđeni prvak Glory teške kategorije u kickboxingu </li>
+      </ul>
+    </div>
+    <div class="lista">
+      <h2>Vrhunski Treneri</h2>
+      <ul>
+        <li><strong>Javier Mendez</strong> – Stručnjak za stand-up borbu, s godinama iskustva u boksu i kickboxingu</li>
+        <li><strong>Mike Passenier</strong> – Jedan od najpoznatijih i najboljih svjetskih trenera kickboxinga</li>
+      </ul>
+    </div>
+    <h2>Naša Filozofija</h2>
+    <p>U Croatian Top Teamu, vjerujemo da je uspjeh rezultat predanosti, napornog rada i vrhunskog vodstva.
+      Naš pristup treningu je nenadmašiv, kombinirajući fizičku pripremu, tehničke vještine i mentalnu snagu kako bi
+      svaki borac mogao ostvariti svoj puni potencijal.</p>
+    <h2>Naši Objekti</h2>
+    <p>CTT Teretana nudi vrhunske uvjete za trening, uključujući:</p>
+    <div class="lista">
+      <ul>
+        <li>Dvorane za trening sa modernom opremom</li>
+        <li>Profesionalni ring i oktogon za sparinge</li>
+        <li>Specijalizirane dvorane za boks, kickboxing i grappling</li>
+        <li>Sobe za rehabilitaciju i masažu</li>
+      </ul>
+    </div>
+    <br>
+    <div class="napomena">
+      <h3>Napomena</h3>
+      <p>Glavna akademija u Rijeci te ostale u Europi NE nude nastavu široj javnosti i NISU otvorene za posjetitelje.
+      </p>
+      <p>Ako ste zainteresirani za trening kao sportaš visoke razine, provjerite jednu od naših teretana koja Vam je
+        najbliža.</p>
+      <p>Molimo Vas kontaktirajte ih izravno.</p>
+    </div>
+  </div>
+  <footer>
+    <img src="logo.svg" alt="Croatian Top Team" style="width:10%; height:auto;">
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Croatian Top Team</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5vh;
+    }
+
+    form p {
+      font-size: 1.5vw;
+      color: white;
+      margin: 0.5vw;
+      width: 80%;
+    }
+
+    form input,
+    form select,
+    form textarea {
+      font-size: 1.5vw;
+      padding: 0.5vw;
+      margin-top: 0.5vw;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    form input[type="submit"],
+    form input[type="reset"] {
+      font-size: 1.5vw;
+      padding: 0.5vw 2vw;
+      background-color: #FF2c2c;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 1vw;
+      width: auto;
+    }
+
+    form input[type="submit"]:hover,
+    form input[type="reset"]:hover {
+      background-color: #D3D3D3;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html" class="logo"><img src="logo.svg" alt="LOGO" height="100" width="100"></a>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    <nav class="nav-menu">
+      <a href="index.html">Početna</a>
+      <a href="novosti.html">Novosti</a>
+      <a href="programi.html">Programi</a>
+      <a href="nastim.html">Naš tim</a>
+      <a href="onama.html">O nama</a>
+      <a href="clan.html">Postani član</a>
+    </nav>
+  </header>
+
+  <script>
+    function toggleMenu() {
+      const navMenu = document.querySelector('.nav-menu');
+      navMenu.classList.toggle('active');
+    }
+  </script>
+
+  <div class="forma">
+    <form action="clan.php" method="post">
+      <h2>Postani dio tima!</h2>
+      <p>Ime: <input type="text" name="ime" required><span></span></p>
+      <p>Prezime: <input type="text" name="prezime" required><span></span></p>
+      <p>Spol:</p>
+      <div style="display: flex; gap: 10px; align-items: center;">
+        <input type="radio" id="musko" name="spol" value="Musko">
+        <label for="musko">
+          <p>Muško</p>
+        </label>
+        <input type="radio" id="zensko" name="spol" value="Zensko">
+        <label for="zensko">
+          <p>Žensko</p>
+        </label>
+      </div>
+      <p>Datum rodenja: <input type="date" name="datum"></p>
+      <p>E-mail: <input type="email" name="email"><span></span></p>
+      <p>Bazni sport:
+        <select name="sport">
+          <option value="Boks">MMA</option>
+          <option value="Boks">Boks</option>
+          <option value="Kickboxing">Kickboxing</option>
+          <option value="Hrvanje">Hrvanje</option>
+          <option value="BJJ">BJJ</option>
+        </select>
+      </p>
+      <p>Zašto nam se želiš pridružiti? <br>
+        <textarea name="textarea" rows="5" cols="35"></textarea>
+      </p>
+      <input type="submit">
+      <input type="reset">
+    </form>
+  </div>
+
+  <br>
+  <footer>
+    <img src="logo.svg" alt="Croatian Top Team" style="width:10%; height:auto;">
+  </footer>
+</body>
+
+</html>

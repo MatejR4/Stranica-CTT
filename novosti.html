@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Croatian Top Team</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html" class="logo"><img src="logo.svg" alt="LOGO" height="100" width="100"></a>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    <nav class="nav-menu">
+      <a href="index.html">Početna</a>
+      <a href="novosti.html">Novosti</a>
+      <a href="programi.html">Programi</a>
+      <a href="nastim.html">Naš tim</a>
+      <a href="onama.html">O nama</a>
+      <a href="clan.html">Postani član</a>
+    </nav>
+  </header>
+
+  <script>
+    function toggleMenu() {
+      const navMenu = document.querySelector('.nav-menu');
+      navMenu.classList.toggle('active');
+    }
+  </script>
+
+  <div class="clanak">
+    <div class="sadrzaj">
+      <h2>Pereira vs Ankalaev</h2>
+      <p>
+        Pereira stavlja svoju titulu u poluteškoj kategoriji na kocku protiv čovjeka kojeg su mnogi godinama smatrali
+        budućim prvakom. Pereira dolazi nakon senzacionalne godine u kojoj je upisao tri pobjede nokautom. Ankalaev je u
+        međuvremenu neporažen od svog debija u UFC-u 2018., s 11 pobjeda, 1 remijem i 1 bez natjecanja
+        u zadnjih 12 borbi. Također je imao jaku 2024. godinu.
+      </p>
+      <div class="slike">
+        <img src="pereiraankalev.png" alt="Pereira Ankalaev" class="slika">
+      </div>
+    </div>
+  </div>
+
+  <div class="clanak">
+    <div class="sadrzaj">
+      <h2>Team Canelo seminar</h2>
+      <p>
+        14.6.2025 u našoj glavnoj teretani u Rijeci na lokaciji Vurkovarska ulica 49, 51000 Rijeka održat će se seminar
+        jednog od najboljih
+        boksača super srednje kategorije svih vremena. Canelo zajedno sa svojim timom ostat će na tjedan dana gdje
+        će svakodnevno trenirati sa našim profesionalcima i držati treninge za zainteresirane koji nisu članovi CTT-a.
+      </p>
+      <div class="slike">
+        <img src="canelooseminar.jpg" alt="Team Canelo" class="slika">
+      </div>
+    </div>
+  </div>
+
+  <div class="clanak">
+    <div class="sadrzaj">
+      <h2>FNC 20</h2>
+      <p>
+        FNC 20 donosi spektakularnu borilačku akciju s vrhunskim MMA borcima iz regije! Održava se u Zagrebu,
+        a ljubitelji borilačkih sportova mogu očekivati napete mečeve, žestoke nokaut udarce i neizvjesne okršaje u
+        kavezu. Ovaj event obećava nezaboravnu večer adrenalina i vrhunskog sportskog nadmetanja.
+      </p>
+      <div class="slike">
+        <video controls>
+          <source src="video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <footer>
+    <img src="logo.svg" alt="Croatian Top Team" style="width:10%; height:auto;">
+  </footer>
+</body>
+
+</html>

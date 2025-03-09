@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Croatian Top Team</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html" class="logo"><img src="logo.svg" alt="LOGO" height="100" width="100"></a>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    <nav class="nav-menu">
+      <a href="index.html">Početna</a>
+      <a href="novosti.html">Novosti</a>
+      <a href="programi.html">Programi</a>
+      <a href="nastim.html">Naš tim</a>
+      <a href="onama.html">O nama</a>
+      <a href="clan.html">Postani član</a>
+    </nav>
+  </header>
+
+  <script>
+    function toggleMenu() {
+      const navMenu = document.querySelector('.nav-menu');
+      navMenu.classList.toggle('active');
+    }
+  </script>
+
+  <h1>Treneri</h1>
+
+  <div class="clanak">
+    <div class="sadrzaj">
+      <h2>Javier Mendez</h2>
+      <p>
+        Javier Mendez je poznat po svojoj taktičkoj briljantnosti, strpljenju i posvećenosti detaljima. Njegova
+        sposobnost prilagodbe treninga individualnim potrebama boraca i njegova motivacija čine ga jednim od najboljih
+        trenera u MMA svijetu.
+      </p>
+    </div>
+  </div>
+  <div class="slike">
+    <img src="Javier.jpg" alt="Javier Mendez" class="slika">
+  </div>
+
+  <div class="clanak">
+    <div class="sadrzaj">
+      <h2>Mike Passenier</h2>
+      <p>
+        Mike Passenier, poznat kao "Big Mike," je dinamičan i motivirajući trener s izuzetnom sposobnošću prepoznavanja
+        potencijala u borcima. Njegov energičan pristup, tehničko znanje i iskustvo u kickboxingu čine ga jednim od
+        najcjenjenijih trenera u sportu.
+      </p>
+    </div>
+  </div>
+  <div class="slike">
+    <img src="Mike.jpg" alt="Mike Passenier" class="slika">
+  </div>
+
+
+  <br>
+  <hr><br>
+
+  <h1 style="margin-top: 10%;">Borci</h1>
+
+  <div class="clanak">
+    <div class="sadrzaj">
+      <h2>Dustin porier</h2>
+      <p>
+        Dustin Glenn Poirier je američki profesionalni MMA borac. Trenutno se natječe u lakoj kategoriji Ultimate
+        Fighting Championshipa, gdje je bivši privremeni UFC prvak u lakoj kategoriji. Od 16. travnja 2024. nalazi se na
+        4. mjestu UFC-ove ljestvice lake kategorije.
+      </p>
+    </div>
+  </div>
+  <div class="slike">
+    <img src="porier.jpg" alt="Dustin Porier" class="slika">
+  </div>
+
+  <div class="clanak">
+    <div class="sadrzaj">
+      <h2>Rico Verhoeven</h2>
+      <p>
+        Rico "King of Kickboxing" Verhoeven, podrijetlom iz Nizozemske, zadnjih 10 godina neporažen drži Glory
+        Kickboxing Heavyweight titulu. Poznat je po svojoj izdržljivosti, savršenoj tehnici i nevjerojatnoj snazi
+        udarca.
+      </p>
+    </div>
+  </div>
+  <div class="slike">
+    <img src="rico.jpg" alt="Rico Verhoeven" class="slika">
+  </div>
+
+  <br>
+
+  <footer>
+    <img src="logo.svg" alt="Croatian Top Team" style="width:10%; height:auto;">
+  </footer>
+
+</body>
+
+</html>
